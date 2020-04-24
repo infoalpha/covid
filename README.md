@@ -21,10 +21,9 @@ Mac: https://medium.com/@fahimhossain_16989/installing-apache-tomcat-on-macos-mo
 # Import as Existing Maven Projects
 
 #Url's
-`
-http://localhost:8080/covid/    
-http://localhost:8080/covid/  /employee-module/getAllEmployees 
-`
+`http://localhost:8080/covid/`   
+`http://localhost:8080/covid/facility/getAllFacilities` 
+
  
 #Compile Code 
 `mvn clean install`
