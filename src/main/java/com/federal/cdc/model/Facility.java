@@ -2,7 +2,7 @@ package com.federal.cdc.model;
 
 import java.io.Serializable;
 
-public class FacilityVO implements Serializable 
+public class Facility implements Serializable 
 {
 	
 	private Integer id;
