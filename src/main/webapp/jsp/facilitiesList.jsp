@@ -28,8 +28,9 @@
 				<td>${facility.bedCapacity}</td>
 				<td>${facility.inspectionDate}</td>
 				<td>${facility.status}</td>
-
+				<td><a href="/covid/facility/edit/${facility.id}">edit</a></td>
 			</tr>
+
 		</c:forEach>
 	</table>
 
