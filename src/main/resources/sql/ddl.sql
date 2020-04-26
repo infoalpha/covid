@@ -1,3 +1,5 @@
+
+-- Create Schema --
 CREATE DATABASE IF NOT EXISTS covid;
 SET @@global.time_zone='+00:00';
 
@@ -9,6 +11,8 @@ USE covid;
 
 DROP TABLE IF EXISTS `covid`.`users`;
 
+-- Create users table -- 
+
 CREATE TABLE `covid`.`users` (
   `username` VARCHAR(45) NOT NULL,
   `password` VARCHAR(45) NULL,
@@ -19,6 +23,8 @@ CREATE TABLE `covid`.`users` (
   `phone` INT NULL,
   PRIMARY KEY (`username`));
   
+  
+  -- Create facility table -- 
 
 CREATE TABLE `covid`.`facility` (
   `id` MEDIUMINT NOT NULL AUTO_INCREMENT,
@@ -28,5 +34,21 @@ CREATE TABLE `covid`.`facility` (
   `bedcapacity` INT NULL,
   `inspectiondate` TIMESTAMP NULL,
   `status` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`));
+  
+  
+--  Facility Audit Tables --    
+
+CREATE TABLE `covid`.`facilityAudit` (
+  `id` MEDIUMINT NOT NULL AUTO_INCREMENT,
+  `facilityid` MEDIUMINT NOT NULL,
+  `name` VARCHAR(100) NOT NULL,
+  `companyname` VARCHAR(100) NULL,
+  `address` VARCHAR(100) NOT NULL,
+  `bedcapacity` INT NULL,
+  `inspectiondate` TIMESTAMP NULL,
+  `status` VARCHAR(45) NOT NULL,
+   `modifiedby` VARCHAR(45) NULL,
+   `modifieddate` TIMESTAMP NULL,
   PRIMARY KEY (`id`));
   
