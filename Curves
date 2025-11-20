@@ -1,0 +1,7 @@
+{/* Smoother curves with cubic Bézier (C command) */}
+<path 
+  d="M 0,80 C 100,80 200,110 300,140" 
+  stroke="#3b82f6" 
+  strokeWidth="3" 
+  fill="none" 
+/>
