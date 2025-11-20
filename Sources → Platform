@@ -1,0 +1,33 @@
+<svg className="connections" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid meet">
+  {/* Blue line - top */}
+  <path 
+    d="M 0,80 Q 150,80 300,140" 
+    stroke="#3b82f6" 
+    strokeWidth="3" 
+    fill="none" 
+  />
+  
+  {/* Cyan line - upper middle */}
+  <path 
+    d="M 0,140 Q 150,140 300,140" 
+    stroke="#06b6d4" 
+    strokeWidth="3" 
+    fill="none" 
+  />
+  
+  {/* Yellow line - lower middle */}
+  <path 
+    d="M 0,200 Q 150,200 300,140" 
+    stroke="#fbbf24" 
+    strokeWidth="3" 
+    fill="none" 
+  />
+  
+  {/* Pink line - bottom */}
+  <path 
+    d="M 0,260 Q 150,260 300,140" 
+    stroke="#ec4899" 
+    strokeWidth="3" 
+    fill="none" 
+  />
+</svg>
